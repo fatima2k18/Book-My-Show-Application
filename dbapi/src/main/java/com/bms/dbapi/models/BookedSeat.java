@@ -1,8 +1,9 @@
 package com.bms.dbapi.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,4 +13,10 @@ import lombok.*;
 @Entity
 @Table(name="bookedSeat")
 public class BookedSeat {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    UUID id;
+
+
+
 }
