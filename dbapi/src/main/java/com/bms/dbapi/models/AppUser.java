@@ -23,6 +23,7 @@ public class AppUser {
    @Column(unique = true)
    Long phoneNumber;
    String address;
+   String state;
    int pincode;
    String userType;
 
